@@ -1,6 +1,13 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Martín Alberdi
+logo: /assets/img/profile.jpg
+description: |
+  Ph.D. Candidate<br>
+  Department of Political and Social Sciences<br>
+  European University Institute (EUI)<br>
+  <a href="mailto:martin.alberdi@eui.eu">martin.alberdi@eui.eu</a><br><br>
+  
+  <a href="/cv/august_2024_cv.pdf"><strong>Curriculum Vitae</strong></a>
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+
