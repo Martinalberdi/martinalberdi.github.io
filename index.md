@@ -2,122 +2,16 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+I am Ph.D. candidate at the Department of Political and Social Sciences at the [European University Institute](https://www.eui.eu/en/academic-units/political-and-social-sciences). I will be a visiting student at Princeton University in the fall semester 2024. In my dissertation project, I examine how climate policies influence political behavior, focusing on how energy policies affect homeowners' perceptions of economic well-being within different *types* of energy transitions. I ground my thesis in the social insurance literature, arguing that climate policies enable some groups to build ecological wealth. More broadly, I am interested in the political consequences of progressive policies implemented by left-wing parties that benefit higher income groups, and when these make or break winning electoral coalitions.
 
-[Link to another page](./another-page.html).
+## Working Papers
 
-There should be whitespace between paragraphs.
+[Building Eco-Wealth: How Climate Subsidies Shape Support for the Greens.](https://osf.io/preprints/osf/ysvuq)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+*Abstract*
 
-# Header 1
+How do climate subsidies affect support for Green parties? Lately, climate policies have shifted from distributing costs through carbon pricing to offering benefits via subsidies. Research shows that policies imposing concentrated costs provoke electoral backlash. However, what happens when the benefits of climate policies are concentrated and the costs are diffuse? This study examines how climate subsidies for rooftop solar panels influence political behavior in Germany. I argue that solar panel investments allow homeowners to self-insure by increasing their ecological wealth, improving their perception of the economic benefits of the energy transition, and strengthening support for ambitious climate policies. Using difference-in-differences designs, I show that homeowners are more likely to support the Greens after purchasing solar panels. This self-insurance function of climate subsidies suggests that material incentives can provide a distinct source of support for fast-tracking the climate transition, albeit at the cost of benefiting wealthy homeowners.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Work in Progress
 
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Economic Risk and the Heating Transition: The Electoral Politics of Asset Bans. *(with Ludwig Schulze)*
