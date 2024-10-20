@@ -6,14 +6,30 @@ I am Ph.D. candidate at the Department of Political and Social Sciences at the [
 
 ## Working Papers
 
-[Building Eco-Wealth: How Climate Subsidies Shape Support for the Greens.](https://osf.io/preprints/osf/ysvuq)
+[**Building Eco-Wealth: How Climate Subsidies Shape Support for the Greens.**](https://osf.io/preprints/osf/ysvuq)
 
-*Abstract*
+<button id="abstractButton">ABSTRACT</button>
 
-How do climate subsidies affect support for Green parties? Lately, climate policies have shifted from distributing costs through carbon pricing to offering benefits via subsidies. Research shows that policies imposing concentrated costs provoke electoral backlash. However, what happens when the benefits of climate policies are concentrated and the costs are diffuse? This study examines how climate subsidies for rooftop solar panels influence political behavior in Germany. I argue that solar panel investments allow homeowners to self-insure by increasing their ecological wealth, improving their perception of the economic benefits of the energy transition, and strengthening support for ambitious climate policies. Using difference-in-differences designs, I show that homeowners are more likely to support the Greens after purchasing solar panels. This self-insurance function of climate subsidies suggests that material incentives can provide a distinct source of support for fast-tracking the climate transition, albeit at the cost of benefiting wealthy homeowners.
+<div id="abstractContent" style="display: none; margin-top: 20px;">
+  <p>
+    How do climate subsidies affect support for Green parties? Lately, climate policies have shifted from distributing costs through carbon pricing to offering benefits via subsidies. Research shows that policies imposing concentrated costs provoke electoral backlash. However, what happens when the benefits of climate policies are concentrated and the costs are diffuse? This study examines how climate subsidies for rooftop solar panels influence political behavior in Germany. I argue that solar panel investments allow homeowners to self-insure by increasing their ecological wealth, improving their perception of the economic benefits of the energy transition, and strengthening support for ambitious climate policies. Using difference-in-differences designs, I show that homeowners are more likely to support the Greens after purchasing solar panels. This self-insurance function of climate subsidies suggests that material incentives can provide a distinct source of support for fast-tracking the climate transition, albeit at the cost of benefiting wealthy homeowners.
+  </p>
+</div>
 
-European Mass Attitudes towards Russia’s Aggression against Ukraine: It Is Not the Economy. *(with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu and  Diana Rafailova)*. Revise & Resubmit.
+**European Mass Attitudes towards Russia’s Aggression against Ukraine: It Is Not the Economy.** *(with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu and Diana Rafailova)*. Revise & Resubmit.
 
 ## Work in Progress
 
-Economic Risk and the Heating Transition: The Electoral Politics of Asset Bans. *(with Ludwig Schulze)*.
+**Economic Risk and the Heating Transition: The Electoral Politics of Asset Bans.** *(with Ludwig Schulze)*.
+
+<script>
+document.getElementById('abstractButton').addEventListener('click', function() {
+  var abstractContent = document.getElementById('abstractContent');
+  if (abstractContent.style.display === 'none' || abstractContent.style.display === '') {
+    abstractContent.style.display = 'block';
+  } else {
+    abstractContent.style.display = 'none';
+  }
+});
+</script>
+
