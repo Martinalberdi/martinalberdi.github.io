@@ -1,4 +1,116 @@
-// Placeholder file. If your site uses
-//     @import "{{ site.theme }}";
-// Then using this theme with jekyll-remote-theme will work fine.
-@import "jekyll-theme-minimal";
+@import "fonts"; // Import fonts globally
+
+// Base Styling
+body {
+  font-family: "Inter", "Noto Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2d2d2d;
+  background-color: #FFF6F6;
+  font-weight: 300;
+  margin: 0;
+  padding: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  color: #393939;
+}
+
+h3 {
+  font-size: 20px;
+  color: #494949;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #008939;
+  text-decoration: none;
+  
+  &:hover {
+    color: #007730;
+  }
+}
+
+.site-description {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+// Ensure proper word wrapping on small screens
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap: break-word;
+  }
+}
+
+// Responsive Typography
+strong {
+  font-weight: 700;
+  color: #222;
+}
+
+// Responsive Layout
+.wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+blockquote {
+  border-left: 3px solid #e5e5e5;
+  margin: 0;
+  padding: 10px 20px;
+  font-style: italic;
+}
+
+// Code Styling
+code, pre {
+  font-family: Monaco, "Courier New", monospace;
+  color: #333;
+}
+
+pre {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+  color: #444;
+}
+
+// Responsive Adjustments
+@media screen and (max-width: 720px) {
+  .wrapper {
+    width: auto;
+    padding: 0 20px;
+  }
+}
