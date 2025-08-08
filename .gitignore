@@ -4,3 +4,4 @@ Gemfile.lock
 *.gem
 .jekyll-cache
 .Rproj.user
+.DS_Store
