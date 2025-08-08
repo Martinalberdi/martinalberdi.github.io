@@ -1,16 +1,32 @@
-title: Martín Alberdi
-logo: /assets/img/profile.jpg
-description: |
+title: "Martín Alberdi"
+description: >
   Ph.D. Candidate<br>
   Department of Political and Social Sciences<br>
   European University Institute (EUI)<br>
   <a href="mailto:martin.alberdi@eui.eu">martin.alberdi@eui.eu</a><br><br>
-  
   <a href="/cv/march_2025_cv.pdf"><strong>Curriculum Vitae</strong></a>
-show_downloads: false
-google_analytics:
-theme: jekyll-theme-minimal
-github:
-  is_user_page: false
-  owner_url: https://github.com/Martinalberdi
+logo: /assets/img/profile.jpg
+
+# IMPORTANT: turn off theme css; we'll supply our own
+theme: null
+
+# GitHub Pages user site settings
+url: "https://martinalberdi.github.io"
+baseurl: ""   # important for a username.github.io site
+
+# Build options
+markdown: kramdown
+highlighter: rouge
+
+# (Optional) Google Analytics etc. can go via _includes/head-custom.html
+# google_analytics: UA-XXXXXXXXX-X
+
+# Navigation (we’ll read these in layout)
+nav:
+  - text: "About"
+    url: "/"
+  - text: "Research"
+    url: "/research"
+  - text: "CV"
+    url: "/cv/march_2025_cv.pdf"
 
