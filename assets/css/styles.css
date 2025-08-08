@@ -1,0 +1,243 @@
+/* ===============================
+   Base variables
+   =============================== */
+   :root {
+    --bg: #FFF6F6;      /* your background color */
+    --text: #222;
+    --muted: #777;
+    --link: #008939;    /* your green */
+    --link-hover: #007730;
+    --rule: #777;
+    --ui: #d6d6d6;
+  }
+  
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    line-height: 1.6;
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+  }
+  
+  /* ===============================
+     Header
+     =============================== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 20vw 2rem;
+    min-width: 500px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  h1 a {
+    color: #111;
+    text-decoration: none;
+    transition: color .3s ease;
+  }
+  h1 a:hover {
+    color: #111;
+  }
+  
+  /* ===============================
+     Navigation
+     =============================== */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 500;
+    font-size: .75rem;
+    color: var(--muted);
+    transition: color .3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #111;
+    cursor: pointer;
+  }
+  
+  nav ul li a.current-page {
+    color: #111;
+  }
+  
+  /* ===============================
+     Main content
+     =============================== */
+  main {
+    padding: 2rem 20vw;
+    min-width: 500px;
+  }
+  
+  p {
+    margin: 0 0 1.2rem 0;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+  }
+  
+  a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  a:hover {
+    color: var(--link-hover);
+  }
+  
+  /* ===============================
+     Profile image
+     =============================== */
+  img[alt="Logo"],
+  img.profile {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+    border-radius: 4px;
+  }
+  
+  /* ===============================
+     Research page elements
+     =============================== */
+  .paper-title {
+    font-weight: 600;
+  }
+  
+  .paper-title a {
+    color: #2e68f2;
+    border-bottom: none;
+  }
+  .paper-title a:hover {
+    color: #4A7FF5;
+    border-bottom: none;
+  }
+  
+  .inline-button {
+    display: inline-block;
+    padding: 2.5px 4.5px;
+    margin-left: .25rem;
+    font-size: .625rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--ui);
+    border-radius: 0;
+    transition: all .2s ease;
+    vertical-align: 0.1rem;
+    white-space: nowrap;
+  }
+  .inline-button:hover {
+    border-color: #222;
+  }
+  
+  /* Small gray list with left rule */
+  .styled-list {
+    font-size: .80rem;
+    color: var(--muted);
+    position: relative;
+    padding-left: 1.25rem;
+    list-style: none;
+    margin: .25rem 0 0 0;
+  }
+  .styled-list::before {
+    content: "";
+    position: absolute;
+    left: .5rem;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    background: #d6d6d6;
+  }
+  .styled-list li {
+    margin: .15rem 0;
+  }
+  .styled-list a {
+    color: currentColor;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .styled-list a:hover {
+    color: #222;
+    border-bottom: 1px solid #777;
+  }
+  
+  /* Section separators */
+  .solid-line {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 3rem 0;
+  }
+  
+  /* Bibliography spacing */
+  #bibliography p {
+    margin-bottom: 1.2rem;
+    font-size: .95rem;
+  }
+  
+  /* ===============================
+     Responsive
+     =============================== */
+  @media (max-width: 768px) {
+    header, main {
+      min-width: unset;
+    }
+    header {
+      margin-top: 5vh;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 10vw 2rem;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: .5rem;
+    }
+    main {
+      padding: 2rem 10vw;
+    }
+    img[alt="Logo"], img.profile {
+      float: none;
+      display: block;
+      margin: 1rem auto 5vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 20px 5vw 2rem;
+    }
+    main {
+      padding: 1.5rem 5vw;
+    }
+    p {
+      font-size: .95rem;
+    }
+    nav ul li a {
+      font-size: .85rem;
+    }
+  }
+  
