@@ -1,27 +1,43 @@
+# Site settings
 title: "Martín Alberdi"
-description: >
+author: "Martín Alberdi"
+
+# This is the SEO-friendly description for search engines. It should be a plain text sentence.
+description: "Ph.D. Candidate at the European University Institute (EUI), specializing in the intersection of climate politics, policy feedback, and political behavior."
+
+# This is your old description, renamed to 'tagline'. Use {{ site.tagline }} in your
+# templates to display the multi-line text with links.
+tagline: >
   Ph.D. Candidate<br>
   Department of Political and Social Sciences<br>
   European University Institute (EUI)<br>
   <a href="mailto:martin.alberdi@eui.eu">martin.alberdi@eui.eu</a><br><br>
   <a href="/cv/march_2025_cv.pdf"><strong>Curriculum Vitae</strong></a>
+
 logo: /assets/img/profile.jpg
 
 # IMPORTANT: turn off theme css; we'll supply our own
 theme: null
 
 # GitHub Pages user site settings
+# The base hostname & protocol for your site, used by plugins
 url: "https://martinalberdi.github.io"
-baseurl: ""   # important for a username.github.io site
+# The subpath of your site. For a username.github.io site, this is an empty string.
+baseurl: ""
 
 # Build options
 markdown: kramdown
 highlighter: rouge
+
+# Plugins: This section is crucial for enabling sitemap, feed, and SEO tags.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # (Optional) Google Analytics etc. can go via _includes/head-custom.html
 # google_analytics: UA-XXXXXXXXX-X
 
 # Navigation (we’ll read these in layout)
 nav: []
-
 
