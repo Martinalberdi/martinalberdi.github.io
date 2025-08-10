@@ -12,33 +12,21 @@
     <!-- Fonts (keep Inter, similar to your current setup) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+      href="https://fonts://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
 
     <!-- Site CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
-    {%- include head-custom.html ignore missing -%}
+
+    {%- include head-custom.html -%}
   </head>
   <body>
     <!-- Start of new HEADER structure from Redesign commit -->
     <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav>
-        <ul>
-          {%- for item in site.nav -%}
-            {%- assign is_current = false -%}
-            {%- if page.url == item.url or page.permalink == item.url -%}{% assign is_current = true %}{%- endif -%}
-            <li>
-              <a href="{{ item.url | relative_url }}" class="{% if is_current %}current-page{% endif %}">
-                {{ item.text }}
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Start of new MAIN content area from Redesign commit -->
+    </header>
+    
     <main>
       {{ content }}
     </main>

@@ -22,11 +22,6 @@ highlighter: rouge
 # google_analytics: UA-XXXXXXXXX-X
 
 # Navigation (we’ll read these in layout)
-nav:
-  - text: "About"
-    url: "/"
-  - text: "Research"
-    url: "/research"
-  - text: "CV"
-    url: "/cv/march_2025_cv.pdf"
+nav: []
+
 
