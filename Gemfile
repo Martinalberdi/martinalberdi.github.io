@@ -8,8 +8,6 @@ gem "github-pages", group: :jekyll_plugins
 
 # If your theme's .gemspec has additional dependencies that are NOT included
 # in the 'github-pages' gem, keep the 'gemspec' line.
-# For a minimal theme, 'github-pages' might be enough, but keeping 'gemspec'
-# ensures theme-specific features remain.
 gemspec
 
 # This gem is required for Jekyll 4.x on newer Ruby versions (like on macOS)
