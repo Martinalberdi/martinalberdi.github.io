@@ -1,8 +1,15 @@
+# Jekyll build output
 _site
+.jekyll-cache
+
+# Jekyll-related temporary files/caches
 .sass-cache
 Gemfile.lock
 *.gem
-.jekyll-cache
-.Rproj.user
+
+# macOS system files
 .DS_Store
-.DS_Store
+
+# RStudio project files
+.Rproj.user/
+*.Rproj
