@@ -1,4 +1,3 @@
-# Configuration for HTML-Proofer, run by the script/cibuild in GitHub Actions
 ---
 url_ignore:
   - "https://fonts.googleapis.com"
