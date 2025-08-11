@@ -7,7 +7,7 @@ permalink: /
 <div class="hero" id="about">
   <div class="intro">
     <p>I am a Ph.D. Candidate in Political Science at the European University Institute. My research lies at the intersection of climate and redistributive politics.
-    I investigate how the design and implementation of green policies—especially those affecting housing and household assets—shape political preferences and electoral outcomes. 
+    I investigate how the design and implementation of green policies—especially those affecting housing—shape political preferences. 
     My dissertation explains how these policies commodify the energy transition through homeownership, transforming home infrastructure into marketable assets that can have downstream political consequences on perceptions of social inclusion and voting behavior.</p>
 
   </div>
