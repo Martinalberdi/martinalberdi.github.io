@@ -209,44 +209,35 @@ img.profile {
 }
 
 /* ===============================
-   Paper header row & FLOATING ABSTRACT
+   Paper header row & EXPANDING ABSTRACT
    =============================== */
 .paper-header {
   margin-bottom: 1.5rem;  /* Spacing between papers */
-  /* STEP 1: Create the positioning context for the floating abstract */
-  position: relative;
+  /* position: relative; was removed as it's no longer needed */
 }
 
-.paper-authors { 
-  font-size: 0.85rem; 
-  color: var(--muted); 
+.paper-authors {
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
-
-
-/* STEP 2: Make the <details> element itself not cause line breaks */
+/* Make the <details> element itself not cause line breaks */
 .paper-header details.abstract {
   display: inline;
 }
 
-/* STEP 3: Style the revealed abstract body as a floating panel */
+/* Style the revealed abstract body to appear in the document flow */
 .paper-header details[open] > .abstract-body {
-  /* This is the magic: take the abstract out of the document flow */
-  position: absolute;
-  z-index: 10; /* Ensure it appears on top of other content */
-  
-  /* Position it relative to the .paper-header container */
-  top: 100%;    /* Start right below the title/author line */
-  left: 0;      /* Align to the left edge of the container */
-  right: 0;     /* Stretch to the right edge */
+  /* The abstract now appears in the normal flow, pushing content down. */
+  display: block; /* Ensure it behaves like a block */
   margin-top: 10px; /* Add some space below the title line */
 
-  /* Visual styling for the floating box */
+  /* Visual styling for the box */
   background: #f9f9f9;
   border: 1px solid var(--ui);
   border-radius: 4px;
   padding: 1em;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Softened shadow for an inline block */
   
   /* Reset text styles that might be inherited */
   color: var(--text);
@@ -254,7 +245,7 @@ img.profile {
   text-align: left;
 }
 
-/* STEP 4: Remove the default triangle/marker from the <summary> button */
+/* Remove the default triangle/marker from the <summary> button */
 .paper-header summary.inline-button {
   list-style: none; /* For Firefox/others */
 }

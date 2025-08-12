@@ -17,7 +17,7 @@ permalink: /
 
     <div class="social social--stack">
       <!-- CV -->
-      <a class="social-link" href="/cv/march_2025_cv.pdf" target="_blank" aria-label="CV">
+      <a class="social-link" href="/cv/august_2025_cv.pdf" target="_blank" aria-label="CV">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true"><path d="M224 136V0H24C10.7 0 0 10.7 0 24V488c0 13.3 10.7 24 24 24H360c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM384 121.9V128H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 97.9c4.5 4.5 7 10.6 7 17z"/></svg>
         <span>CV</span>
       </a>
