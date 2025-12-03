@@ -65,7 +65,7 @@ permalink: /
     <details class="abstract">
       <summary class="inline-button">Abstract</summary>
       <div class="abstract-body">
-          What are the electoral consequences for Green parties when implementing energy transition policies? Despite broad citizen support for climate action, these parties can face electoral punishment even when policies align with their core mandate. We argue that perceived governing incompetence drives electoral punishment against parties leading the green transition. We examine the argument using high-frequency survey and census data in a difference-in-differences design, leveraging the unexpected 2023 leak of Germany's Building Energy Act. Our analysis finds that counties with a higher share of carbon-based heating systems experienced a significant decline in Green party support. This punishment is driven by former Green voters switching allegiance, notably to the CDU/CSU, due to a generalized decline in perceived Green competence. Our results suggest that also governance, beyond material costs, can undermine the implementation of the green agenda.
+          How does policy mismanagement affect electoral support for Green parties leading the energy transition? We argue that perceived governing incompetence drives electoral punishment against these parties. We test this argument using high-frequency survey and census data in a difference-in-differences design that leverages the unexpected 2023 leak of Germany's Building Energy Act—a proposal banning new carbon-based heating systems that led to a fumbled policy rollout. We find that support for the Greens declined most in counties with more carbon-based heating systems. Using individual-level panel data, we show this punishment came from marginal supporters who, perceiving the Greens as incompetent, switched their allegiance. Our findings suggest that poor governance, beyond its material costs, can undermine the green agenda by shifting voters' priorities toward a party's competence.
       </div>
     </details>
   </span>
@@ -96,7 +96,12 @@ permalink: /
 <h1 class="section-title">Work in Progress</h1>
 
 <section id="bibliography">
-  <p><span style="font-weight:400;font-style:">The Emergence of Green Consumption Norms.</span><br></p>
+  <p>
+    <span style="font-weight:400;font-style:">The Emergence of Green Consumption Norms </span>
+    <span style="font-size:0.85rem; color:var(--muted);">
+      (with Vicente Valentim).
+    </span>
+    <br> </p>
 </section>
 
 <section id="bibliography">
@@ -106,5 +111,13 @@ permalink: /
     </span>
   <br></p>
 </section>
+
+<section id="bibliography">
+  The Institutional Configuration of Property Rights during the Energy Transition.
+  <span class="paper-tail">
+    <span class="paper-authors"></span>
+  </span>
+
+
 
 
