@@ -164,6 +164,12 @@ img.profile {
   margin: 3rem 0;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px solid #b8b8b8;
+  margin: -0.2rem 0 1.75rem;
+}
+
 /* Bibliography spacing for legacy <p> items */
 #bibliography p {
   margin-bottom: 1.2rem;
@@ -200,6 +206,54 @@ img.profile {
   margin-top: 1rem; /* adds space between the profile image and the first icon */
   width: 100%;
   align-items: flex-start; /* left align */
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  margin-top: 1rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.contact-row {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  margin-top: .35rem;
+  font-size: 0.9rem;
+}
+
+.contact-actions a {
+  color: var(--text);
+  line-height: 1;
+}
+
+.contact-actions a:hover {
+  color: var(--text);
+}
+
+.contact-actions .icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.social-link--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link--icon span {
+  display: none;
 }
 
 /* Email line under the photo */
