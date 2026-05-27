@@ -41,11 +41,27 @@
     <!-- Spacer from Redesign commit -->
     <div style="height: 50px;"></div>
 
-    <!-- Script for new tabs from Redesign commit -->
+    <!-- Abstract toggle + new-tab links -->
     <script>
-      // Make .paper-title links and .inline-button open in new tabs—like the reference site
       document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".paper-title a, a.inline-button").forEach(link => {
+        // ── Smooth abstract toggle ──
+        document.querySelectorAll(".toggle-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var target = document.getElementById(btn.dataset.target);
+            if (!target) return;
+            var isOpen = target.classList.contains("is-open");
+            if (isOpen) {
+              target.classList.remove("is-open");
+              btn.setAttribute("aria-expanded", "false");
+            } else {
+              target.classList.add("is-open");
+              btn.setAttribute("aria-expanded", "true");
+            }
+          });
+        });
+
+        // ── Make paper-title links open in new tab ──
+        document.querySelectorAll(".paper-title a").forEach(function (link) {
           link.setAttribute("target", "_blank");
           link.setAttribute("rel", "noreferrer");
         });

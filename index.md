@@ -6,9 +6,9 @@ permalink: /
 
 <div class="hero" id="about">
   <div class="intro">
-    <p>I am a Ph.D. Candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University. My research lies at the intersection of climate and redistributive politics.
-    I investigate how the design and implementation of green policies—especially those affecting housing—shape political preferences. 
-    My dissertation explains how these policies commodify the energy transition through homeownership, transforming home infrastructure into marketable assets that can have downstream political consequences on perceptions of social inclusion and voting behavior.</p>
+    <p>I am a Ph.D. Candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University. My research lies at the intersection of climate and redistributive politics, focusing on how citizens interpret the impact of the green agenda through housing institutions in Western European countries.</p>
+
+  <p>In my dissertation, I examine the political consequences of the marketisation of the green transition. I argue that this shift in governance reconfigures the relationship between citizens and the state by making both co-responsible for decarbonization goals. This shared responsibility, in turn, shapes downstream preference formation and social solidarity.</p>
 
   </div>
 
@@ -57,19 +57,17 @@ permalink: /
       <a href="https://www.researchgate.net/publication/403049733_Mass_Attitudes_towards_Russia's_Aggression_against_Ukraine_Tentative_Support_for_Top-Down_Opinion_Formation">
         European Mass Attitudes towards Russia's Aggression against Ukraine: It Is Not the Economy.
       </a>
-      Forthcoming, <em>European Journal of Political Research</em>
+      <span class="status-tag">Forthcoming</span> <em>European Journal of Political Research</em>
     </span>
     <span class="paper-tail">
       <span class="paper-authors">
         (with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour,
         Eleonora Minaeva, Silvia Porciuleanu and Diana Rafailova).
       </span>
-      <details class="abstract">
-        <summary class="inline-button">Abstract</summary>
-        <div class="abstract-body">
-          This paper studies variation in mass attitudes towards the Russo-Ukrainian War. Although most Europeans express dismay at Russia's aggression against Ukraine, more ambivalent or even pro-Kremlin positions are not rare. Drawing on the literature on foreign policy and war, we hypothesise that support for the aggressor may stem from a quartet of factors: economic interests, ideological preferences, partisan alignment, and disinformation. We examine the role of these factors using two types of survey data. The first is an original survey conducted in five countries (Czechia, France, Poland, Romania, and Slovakia) and spanning over 12,000 respondents. The second is the Solidarity in Europe survey, with more than 24,000 respondents from seventeen countries. The results of three types of analyses reveal that neutral and pro-Kremlin attitudes, held by sizeable segments of European society, are most strongly linked to the positions of respondents’ preferred political parties, followed by disinformation and ideology. Overall, top-down models of public opinion seem to better explain within-country variations in attitudes towards the conflict than bottom-up models. These findings, which should be interpreted with caution, carry important implications for containing Russia's influence on European public opinion and contribute to the literature on public preference formation in the field of foreign policy.
-        </div>
-      </details>
+      <button class="inline-button toggle-btn" data-target="abs-ukraine" aria-expanded="false">Abstract</button>
+      <div class="abstract-body" id="abs-ukraine">
+        This paper studies variation in mass attitudes towards the Russo-Ukrainian War. Although most Europeans express dismay at Russia’s aggression against Ukraine, more ambivalent or even pro-Kremlin positions are not rare. Drawing on the literature on foreign policy and war, we hypothesise that support for the aggressor may stem from a quartet of factors: economic interests, ideological preferences, partisan alignment, and disinformation. We examine the role of these factors using two types of survey data. The first is an original survey conducted in five countries (Czechia, France, Poland, Romania, and Slovakia) and spanning over 12,000 respondents. The second is the Solidarity in Europe survey, with more than 24,000 respondents from seventeen countries. The results of three types of analyses reveal that neutral and pro-Kremlin attitudes, held by sizeable segments of European society, are most strongly linked to the positions of respondents’ preferred political parties, followed by disinformation and ideology. Overall, top-down models of public opinion seem to better explain within-country variations in attitudes towards the conflict than bottom-up models. These findings, which should be interpreted with caution, carry important implications for containing Russia’s influence on European public opinion and contribute to the literature on public preference formation in the field of foreign policy.
+      </div>
     </span>
   </div>
 
@@ -86,12 +84,10 @@ permalink: /
   <a href="https://osf.io/preprints/osf/ysvuq">How Climate Subsidies Shape Support for the Greens.</a>
   <span class="paper-tail">
     <span class="paper-authors"></span>
-    <details class="abstract">
-      <summary class="inline-button">Abstract</summary>
-      <div class="abstract-body">
-          How do climate subsidies affect support for Green parties? Lately, climate policy has shifted from pricing carbon to subsidizing clean energy. Policies that impose concentrated costs trigger backlash, but what happens when benefits are concentrated and costs diffuse? I examine how subsidies for rooftop solar panels shape political behavior in Germany. I argue that subsidies channeled through homeownership can generate resource and informational effects that redefine homeowners as active participants in the energy transition. Using administrative and panel survey data with difference-in-differences designs, I show that owning solar panels increases homeowner support for the Greens and the likelihood of joining environmental interest groups. Further evidence indicates this stems from owners perceiving financial benefits, gaining information about complementary policies, and engaging in collective action. These findings suggest that climate subsidies can generate an endogenous source of support for fast-tracking the climate transition, albeit at the cost of increasing wealth inequality between recipients and non-recipients
-      </div>
-    </details>
+    <button class="inline-button toggle-btn" data-target="abs-solar" aria-expanded="false">Abstract</button>
+    <div class="abstract-body" id="abs-solar">
+      How do climate subsidies affect support for Green parties? Lately, climate policy has shifted from pricing carbon to subsidizing clean energy. Policies that impose concentrated costs trigger backlash, but what happens when benefits are concentrated and costs diffuse? I examine how subsidies for rooftop solar panels shape political behavior in Germany. I argue that subsidies channeled through homeownership can generate resource and informational effects that redefine homeowners as active participants in the energy transition. Using administrative and panel survey data with difference-in-differences designs, I show that owning solar panels increases homeowner support for the Greens and the likelihood of joining environmental interest groups. Further evidence indicates this stems from owners perceiving financial benefits, gaining information about complementary policies, and engaging in collective action. These findings suggest that climate subsidies can generate an endogenous source of support for fast-tracking the climate transition, albeit at the cost of increasing wealth inequality between recipients and non-recipients.
+    </div>
   </span>
 </div>
 
@@ -104,12 +100,10 @@ permalink: /
   <span class="paper-tail">
     <span class="paper-authors">(with Ludwig Schulze).
     </span>
-    <details class="abstract">
-      <summary class="inline-button">Abstract</summary>
-      <div class="abstract-body">
-          How does policy mismanagement affect electoral support for Green parties leading the energy transition? We argue that perceived governing incompetence drives electoral punishment against these parties. We test this argument using high-frequency survey and census data in a difference-in-differences design that leverages the unexpected 2023 leak of Germany's Building Energy Act—a proposal banning new carbon-based heating systems that led to a fumbled policy rollout. We find that support for the Greens declined most in counties with more carbon-based heating systems. Using individual-level panel data, we show this punishment came from marginal supporters who, perceiving the Greens as incompetent, switched their allegiance. Our findings suggest that poor governance, beyond its material costs, can undermine the green agenda by shifting voters' priorities toward a party's competence.
-      </div>
-    </details>
+    <button class="inline-button toggle-btn" data-target="abs-heating" aria-expanded="false">Abstract</button>
+    <div class="abstract-body" id="abs-heating">
+      How does policy mismanagement affect electoral support for Green parties leading the energy transition? We argue that perceived governing incompetence drives electoral punishment against these parties. We test this argument using high-frequency survey and census data in a difference-in-differences design that leverages the unexpected 2023 leak of Germany's Building Energy Act—a proposal banning new carbon-based heating systems that led to a fumbled policy rollout. We find that support for the Greens declined most in counties with more carbon-based heating systems. Using individual-level panel data, we show this punishment came from marginal supporters who, perceiving the Greens as incompetent, switched their allegiance. Our findings suggest that poor governance, beyond its material costs, can undermine the green agenda by shifting voters' priorities toward a party's competence.
+    </div>
   </span>
 </div>
 

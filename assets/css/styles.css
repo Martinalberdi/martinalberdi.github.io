@@ -12,13 +12,25 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Custom text selection ── */
+::selection {
+  background: rgba(0, 137, 57, 0.13);
+  color: inherit;
+}
 body {
   margin: 0;
   background-color: var(--bg);
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ===============================
@@ -28,13 +40,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10vh 20vw 2rem;
-  min-width: 500px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10vh 2rem 2rem;
 }
 
 header h1 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -72,15 +85,16 @@ nav ul li a.current-page { color: #111; }
    Main content
    =============================== */
 main {
-  padding: 2rem 20vw;
-  min-width: 500px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  min-width: 0;
 }
 
 p {
   margin: 0 0 1.2rem 0;
-  line-height: 1.8;
+  line-height: 1.65;
   font-size: 1rem;
-  font-weight: 400;
   color: var(--text);
 }
 
@@ -113,8 +127,49 @@ img.profile {
 
 /* Titles NOT bold */
 .paper-title { font-weight: 400; }
-.paper-title a { color: var(--link); font-weight: 400; }
+
+/* Animated underline on paper title links */
+.paper-title a {
+  color: var(--link);
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+.paper-title a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: var(--link-hover);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
 .paper-title a:hover { color: var(--link-hover); }
+.paper-title a:hover::after { transform: scaleX(1); }
+
+/* Also apply to bare paper links (Working Papers without .paper-title wrapper) */
+.paper-header > a {
+  position: relative;
+  text-decoration: none;
+  color: var(--link);
+}
+.paper-header > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: var(--link-hover);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+.paper-header > a:hover { color: var(--link-hover); }
+.paper-header > a:hover::after { transform: scaleX(1); }
 
 /* Small inline button (Abstract / OSF) */
 .inline-button {
@@ -133,7 +188,7 @@ img.profile {
   vertical-align: 0.1rem;
   white-space: nowrap;
 }
-.inline-button:hover { border-color: #222; }
+.inline-button:hover { border-color: var(--link); color: var(--link); }
 
 /* Small gray list with left rule (if used) */
 .styled-list {
@@ -174,6 +229,23 @@ img.profile {
 #bibliography p {
   margin-bottom: 1.2rem;
   font-size: .95rem;
+}
+
+/* Paper status pill tags (Forthcoming, R&R, Under Review, etc.) */
+.status-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1.5px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+  background: #edf5ee;   /* faint green tint */
+  color: #2a7a40;        /* matches --link green family */
+  white-space: nowrap;
 }
 
 /* ===============================
@@ -237,7 +309,7 @@ img.profile {
 }
 
 .contact-actions a:hover {
-  color: var(--text);
+  color: var(--link);
 }
 
 .contact-actions .icon {
@@ -275,62 +347,60 @@ img.profile {
   color: var(--muted);
 }
 
-/* Make the <details> element itself not cause line breaks */
-.paper-header details.abstract {
-  display: inline;
-}
+/* ── Animated abstract toggle ── */
 
-/* Style the revealed abstract body to appear in the document flow */
-.paper-header details[open] > .abstract-body {
-  /* The abstract now appears in the normal flow, pushing content down. */
-  display: block; /* Ensure it behaves like a block */
-  margin-top: 10px; /* Add some space below the title line */
+/* The abstract container: hidden by default, smooth reveal on .is-open */
+.abstract-body {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease, margin-top 0.25s ease;
+  margin-top: 0;
 
   /* Visual styling for the box */
   background: #f9f9f9;
   border: 1px solid var(--ui);
   border-radius: 4px;
-  padding: 1em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Softened shadow for an inline block */
-  
-  /* Reset text styles that might be inherited */
+  padding: 0 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   color: var(--text);
   font-size: 0.95rem;
   text-align: left;
 }
 
-/* Remove the default triangle/marker from the <summary> button */
-.paper-header summary.inline-button {
-  list-style: none; /* For Firefox/others */
-}
-.paper-header summary.inline-button::-webkit-details-marker {
-  display: none; /* For Chrome/Safari */
+.abstract-body.is-open {
+  max-height: 800px;   /* generous ceiling; CSS animates to this */
+  opacity: 1;
+  margin-top: 10px;
+  padding: 1em;
 }
 
 /* ===============================
    Section titles
    =============================== */
 .section-title {
-  font-size: 1.5rem;   /* same as header h1 */
-  font-weight: 500;
-  margin: 2rem 0 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 2.5rem 0 1.25rem;
 }
 
 /* ===============================
    Responsive
    =============================== */
 @media (max-width: 768px) {
-  header, main { min-width: unset; }
-
   header {
     margin-top: 5vh;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 10vw 2rem;
+    padding: 20px 1.25rem 2rem;
   }
 
   nav ul { flex-direction: column; gap: .5rem; }
-  main { padding: 2rem 10vw; }
+  main { padding: 1.5rem 1.25rem; }
 
   /* Mobile: show photo first, then intro */
   .hero {
@@ -358,6 +428,62 @@ img.profile {
 .icon {
   width: 18px;   /* adjust this value */
   height: 18px;
+}
+
+/* ===============================
+   Print styles
+   =============================== */
+@media print {
+  /* Remove background colors; save ink */
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  /* Single-column: collapse the hero grid */
+  .hero {
+    display: block;
+  }
+  .side {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Remove header chrome */
+  header {
+    padding: 0 0 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Expand all abstracts so content is fully visible */
+  .abstract-body {
+    max-height: none !important;
+    opacity: 1 !important;
+    padding: 0.75em !important;
+    margin-top: 8px !important;
+    border: 1px solid #ccc;
+    background: #fafafa;
+  }
+
+  /* Hide interactive elements and decorative extras */
+  .toggle-btn,
+  .contact-actions,
+  nav {
+    display: none;
+  }
+
+  /* Ensure links show their URL */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  /* But not for icon-only links or internal anchors */
+  a[href^="#"]::after,
+  .social-link--icon::after {
+    content: "";
+  }
 }
 
 .social-link span {
