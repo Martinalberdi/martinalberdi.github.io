@@ -13,6 +13,7 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tabularx}
 \usepackage{xurl}
 \usepackage[colorlinks=true, urlcolor=linkcolor]{hyperref}
 
@@ -66,14 +67,18 @@
 }
 
 \newcommand{\entry}[4]{%
-  \textbf{#1}\hfill {\color{muted} #2}\\
-  #3%
-  \if\relax\detokenize{#4}\relax\else\\#4\fi
-  \par\vspace{0.42em}
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\color{muted}#2}\\[-0.15em]
+    \multicolumn{2}{@{}l@{}}{#3}%
+    \if\relax\detokenize{#4}\relax\else\\[-0.15em]%
+    \multicolumn{2}{@{}l@{}}{#4}\fi
+  \end{tabularx}\vspace{0.1em}
 }
 
 \newcommand{\simpleitem}[2]{%
-  #1\hfill {\color{muted} #2}\par\vspace{0.42em}
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    #1 & {\color{muted}#2}\\
+  \end{tabularx}\vspace{0.1em}
 }
 
 %----------------------------------------------------------------------------------------
@@ -139,7 +144,7 @@
 
 \begin{enumerate}
   \item \href{https://www.researchgate.net/publication/403049733_Mass_Attitudes_towards_Russia's_Aggression_against_Ukraine_Tentative_Support_for_Top-Down_Opinion_Formation}{European Mass Attitudes towards Russia's Aggression against Ukraine: It Is Not the Economy}
-  (with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu, and Diana Rafailova).
+  {\color{muted}(with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu, and Diana Rafailova).}
   {\color{muted}\emph{European Journal of Political Research.}}
 \end{enumerate}
 
@@ -151,7 +156,7 @@
 
 \begin{enumerate}
   \item How Climate Subsidies Shape Support for the Greens.
-  \item The Price of Incompetence: Electoral Punishment and the Heating Transition (with Ludwig Schulze).
+  \item The Price of Incompetence: Electoral Punishment and the Heating Transition {\color{muted}(with Ludwig Schulze)}.
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
@@ -161,8 +166,8 @@
 \section{Work in Progress}
 
 \begin{enumerate}
-  \item The Emergence of Green Consumption Norms (with Vicente Valentim).
-  \item Flood Insurance and Risk Socialization (with Max Bradley, Alexandra Jabbour, and Filip Kostelka).
+  \item The Emergence of Green Consumption Norms {\color{muted}(with Vicente Valentim)}.
+  \item Flood Insurance and Risk Socialization {\color{muted}(with Max Bradley, Alexandra Jabbour, and Filip Kostelka)}.
   \item The Institutional Configuration of Property Rights during the Energy Transition.
 \end{enumerate}
 
