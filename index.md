@@ -113,26 +113,17 @@ permalink: /
 <hr class="section-divider">
 
 <section id="bibliography">
-  <p>
-    <span style="font-weight:400;font-style:">The Emergence of Green Consumption Norms </span>
-    <span style="font-size:0.85rem; color:var(--muted);">
-      (with Vicente Valentim).
-    </span>
-    <br> </p>
-</section>
+  <div class="paper-header">
+    The Emergence of Green Consumption Norms
+    <span class="paper-authors">(with Vicente Valentim).</span>
+  </div>
 
-<section id="bibliography">
-  <p><span style="font-weight:400;font-style:">Flood Insurance and Risk Socialization </span>
-      <span style="font-size:0.85rem; color:var(--muted);">
-      (with Max Bradley, Alexandra Jabbour, Filip Kostelka).
-    </span>
-  <br></p>
-</section>
+  <div class="paper-header">
+    Flood Insurance and Risk Socialization
+    <span class="paper-authors">(with Max Bradley, Alexandra Jabbour, Filip Kostelka).</span>
+  </div>
 
-<section id="bibliography">
-  The Institutional Configuration of Property Rights during the Energy Transition.
-  <span class="paper-tail">
-    <span class="paper-authors"></span>
-  </span>
-
+  <div class="paper-header">
+    The Institutional Configuration of Property Rights during the Energy Transition.
+  </div>
 </section>
