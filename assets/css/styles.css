@@ -132,44 +132,16 @@ img.profile {
 .paper-title a {
   color: var(--link);
   font-weight: 400;
-  position: relative;
   text-decoration: none;
 }
-.paper-title a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 1px;
-  background: var(--link-hover);
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.25s ease;
-}
 .paper-title a:hover { color: var(--link-hover); }
-.paper-title a:hover::after { transform: scaleX(1); }
 
 /* Also apply to bare paper links (Working Papers without .paper-title wrapper) */
 .paper-header > a {
-  position: relative;
   text-decoration: none;
   color: var(--link);
 }
-.paper-header > a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 1px;
-  background: var(--link-hover);
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.25s ease;
-}
 .paper-header > a:hover { color: var(--link-hover); }
-.paper-header > a:hover::after { transform: scaleX(1); }
 
 /* Small inline button (Abstract / OSF) */
 .inline-button {

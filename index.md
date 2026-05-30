@@ -23,7 +23,7 @@ permalink: /
         <a href="mailto:martin.alberdi@eui.eu">martin.alberdi@eui.eu</a>
       </p>
       <div class="contact-actions">
-        <a class="social-link social-link--icon" href="/cv/april_2026_cv.pdf" target="_blank" aria-label="CV">
+        <a class="social-link social-link--icon" href="/cv/may2026.pdf" target="_blank" aria-label="CV">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
             <rect x="1.25" y="1.25" width="13.5" height="13.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.5"/>
             <text x="8" y="10.35" text-anchor="middle" font-size="5.1" font-family="Inter, Arial, sans-serif" font-weight="700" fill="currentColor">CV</text>
@@ -57,7 +57,7 @@ permalink: /
       <a href="https://www.researchgate.net/publication/403049733_Mass_Attitudes_towards_Russia's_Aggression_against_Ukraine_Tentative_Support_for_Top-Down_Opinion_Formation">
         European Mass Attitudes towards Russia's Aggression against Ukraine: It Is Not the Economy.
       </a>
-      <span class="status-tag">Forthcoming</span> <em>European Journal of Political Research</em>
+      <em>European Journal of Political Research</em>
     </span>
     <span class="paper-tail">
       <span class="paper-authors">
