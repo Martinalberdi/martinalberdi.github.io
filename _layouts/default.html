@@ -2,74 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title | default: site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
 
-    {%- if site.description -%}
-    <meta name="description" content="{{ site.description | strip_html | strip_newlines | escape }}">
-    {%- endif -%}
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-      crossorigin="anonymous" integrity="sha384-0ms/h+58rO+kD4ZcGXBlaVmYYLAzjnShRDqSENoz6qVSmfzrq1l2SEasWHESL/Iu">
     <link rel="icon" href="{{ '/favicon-32x32.png' | relative_url }}" sizes="32x32" type="image/png">
     <link rel="icon" href="{{ '/favicon-16x16.png' | relative_url }}" sizes="16x16" type="image/png">
     <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
-    <meta name="theme-color" content="#FFF6F6">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
-
-
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {%- include head-custom.html -%}
   </head>
   <body>
-    <!-- Start of new HEADER structure from Redesign commit -->
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    </header>
-    
-    <main>
-      {{ content }}
-    </main>
+    <div class="site-shell">
+      <header class="profile-card">
+        <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
 
-    <!-- Spacer from Redesign commit -->
-    <div style="height: 50px;"></div>
+        <picture class="profile-picture">
+          <source
+            type="image/avif"
+            srcset="{{ '/assets/img/profile-400.avif' | relative_url }} 400w, {{ '/assets/img/profile-800.avif' | relative_url }} 800w"
+            sizes="(max-width: 480px) 180px, 200px">
+          <source
+            type="image/webp"
+            srcset="{{ '/assets/img/profile-400.webp' | relative_url }} 400w, {{ '/assets/img/profile-800.webp' | relative_url }} 800w"
+            sizes="(max-width: 480px) 180px, 200px">
+          <img
+            class="profile-image"
+            src="{{ site.logo | relative_url }}"
+            width="800"
+            height="800"
+            alt="Portrait of {{ site.author }}"
+            decoding="async"
+            fetchpriority="high">
+        </picture>
 
-    <!-- Abstract toggle + new-tab links -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // ── Smooth abstract toggle ──
-        document.querySelectorAll(".toggle-btn").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var target = document.getElementById(btn.dataset.target);
-            if (!target) return;
-            var isOpen = target.classList.contains("is-open");
-            if (isOpen) {
-              target.classList.remove("is-open");
-              btn.setAttribute("aria-expanded", "false");
-            } else {
-              target.classList.add("is-open");
-              btn.setAttribute("aria-expanded", "true");
-            }
-          });
-        });
+        <div class="profile-details">
+          <p>{{ site.profile.role }}</p>
+          <p>{{ site.profile.department }}</p>
+          <p>{{ site.profile.institution }}</p>
+          <p class="profile-email"><a href="mailto:{{ site.profile.email }}">{{ site.profile.email }}</a></p>
+        </div>
 
-        // ── Make paper-title links open in new tab ──
-        document.querySelectorAll(".paper-title a").forEach(function (link) {
-          link.setAttribute("target", "_blank");
-          link.setAttribute("rel", "noreferrer");
-        });
-      });
-    </script>
+        <nav class="profile-actions" aria-label="Profile links">
+          <a class="profile-action profile-action--cv" href="{{ site.links.cv | relative_url }}" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.5 2.75h7l4 4v14.5h-11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M13.5 2.75v4h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span>CV</span>
+          </a>
+          <a class="profile-action profile-action--icon" href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.72.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.5-2.69-.96-.09-.24-.48-.96-.82-1.15-.28-.15-.68-.52-.01-.53.63-.01 1.08.59 1.23.84.72 1.21 1.87.87 2.33.66.07-.53.28-.87.5-1.07-1.78-.2-3.64-.92-3.64-4.1 0-.91.32-1.65.84-2.23-.08-.2-.37-1.01.08-2.11 0 0 .67-.22 2.2.85.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.07 2.2-.85 2.2-.85.45 1.1.16 1.91.08 2.11.52.58.84 1.32.84 2.23 0 3.19-1.87 3.9-3.65 4.11.29.26.54.77.54 1.56 0 1.12-.01 2.02-.01 2.29 0 .21.15.47.55.39A8.02 8.02 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg>
+          </a>
+          <a class="profile-action profile-action--icon" href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 1 1 4.7 8 8.4 15 4.7 8 1Z" fill="currentColor"/>
+              <path d="M3.2 6.2v3.2c0 .8 2.1 2.2 4.8 2.2s4.8-1.4 4.8-2.2V6.2L8 8.8 3.2 6.2Z" fill="currentColor"/>
+              <path d="M13.1 5.6v3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="13.1" cy="10.5" r=".9" fill="currentColor"/>
+            </svg>
+          </a>
+        </nav>
+      </header>
 
-    <!-- Your existing other scripts (re-integrated from HEAD) -->
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+      <main id="main-content">
+        {{ content }}
+      </main>
+    </div>
+
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

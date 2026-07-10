@@ -4,17 +4,21 @@ author: "Martín Alberdi"
 
 # This is the SEO-friendly description for search engines. It should be a plain text sentence.
 description: "Ph.D. Candidate at the European University Institute (EUI), specializing in the intersection of climate politics, policy feedback, and political behavior."
+tagline: "Political Science"
 
-# This is your old description, renamed to 'tagline'. Use {{ site.tagline }} in your
-# templates to display the multi-line text with links.
-tagline: >
-  Ph.D. Candidate<br>
-  Department of Political and Social Sciences<br>
-  European University Institute (EUI)<br>
-  <a href="mailto:martin.alberdi@eui.eu">martin.alberdi@eui.eu</a><br><br>
-  <a href="/cv/april_2026_cv.pdf"><strong>Curriculum Vitae</strong></a>
+profile:
+  role: "Ph.D. Candidate"
+  department: "Department of Political and Social Sciences"
+  institution: "European University Institute"
+  email: "martin.alberdi@eui.eu"
 
-logo: /assets/img/profile.jpg
+links:
+  cv: "/cv/may_2026_cv.pdf"
+  github: "https://github.com/Martinalberdi"
+  scholar: "https://scholar.google.com/citations?user=UWZfyJkAAAAJ&hl=en&oi=ao"
+
+logo: /assets/img/profile-800.jpg
+image: /assets/img/profile-800.jpg
 
 # IMPORTANT: turn off theme css; we'll supply our own
 theme: null
