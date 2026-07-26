@@ -1,0 +1,274 @@
+\documentclass[11pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{inter}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{xurl}
+\usepackage[
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=linkcolor,
+  pdftitle={Curriculum Vitae -- Martín Alberdi},
+  pdfauthor={Martín Alberdi}
+]{hyperref}
+
+\definecolor{linkcolor}{HTML}{007A33}
+\definecolor{muted}{HTML}{5F6368}
+\definecolor{rulecolor}{HTML}{D8DADD}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{{\color{muted}\small\thepage}}
+\fancyfoot[R]{{\color{muted}\small Last updated July 2026}}
+\setlength{\footskip}{0.65cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.12em}
+\setlength{\emergencystretch}{3em}
+\urlstyle{same}
+\raggedbottom
+
+\setlist[itemize]{
+  leftmargin=1.2em,
+  label={--},
+  itemsep=0.12em,
+  topsep=0.22em,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\setlist[enumerate]{
+  leftmargin=1.45em,
+  label=\arabic*.,
+  itemsep=0.14em,
+  topsep=0.22em,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\titleformat{\section}
+  {\normalsize\bfseries\raggedright}
+  {}
+  {0pt}
+  {}
+  [{\vspace{0.28em}\color{rulecolor}\titlerule}]
+
+\titlespacing*{\section}{0pt}{0.82em}{0.42em}
+
+%----------------------------------------------------------------------------------------
+%    HELPERS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvname}[1]{%
+  {\fontsize{24}{26}\selectfont #1}\par
+}
+
+\newcommand{\cvmeta}[1]{%
+  {\color{muted} #1}\par
+}
+
+\newcommand{\dateditem}[2]{%
+  \noindent
+  \begin{minipage}[t]{0.80\linewidth}\raggedright #1\end{minipage}\hfill%
+  \begin{minipage}[t]{0.18\linewidth}\raggedleft{\color{muted}#2}\end{minipage}\par
+}
+
+\newcommand{\entry}[4]{%
+  \dateditem{\textbf{#1}}{#2}%
+  #3\par
+  \if\relax\detokenize{#4}\relax\else{\color{muted}#4}\par\fi
+  \vspace{0.18em}
+}
+
+\newcommand{\simpleitem}[2]{%
+  \dateditem{#1}{#2}\vspace{0.08em}
+}
+
+%----------------------------------------------------------------------------------------
+%    DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\RaggedRight
+
+\cvname{Martín Alberdi}
+\cvmeta{Ph.D.\ Candidate in Political Science \quad\textbullet\quad European University Institute}
+\cvmeta{\href{mailto:martin.alberdi@eui.eu}{martin.alberdi@eui.eu} \quad | \quad \href{https://martinalberdi.github.io}{martinalberdi.github.io} \quad | \quad \href{https://scholar.google.com/citations?user=UWZfyJkAAAAJ&hl=en&oi=ao}{Google Scholar} \quad | \quad \href{https://github.com/Martinalberdi}{GitHub}}
+
+%----------------------------------------------------------------------------------------
+%    EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\entry
+  {Ph.D.\ Candidate in Political Science}
+  {2022--present}
+  {European University Institute (EUI)}
+  {\emph{Supervisors:} Filip Kostelka and Elias Dinas}
+
+\entry
+  {M.Sc.\ in Social Sciences}
+  {2020--2022}
+  {Carlos III--Juan March Institute, Universidad Carlos III de Madrid}
+  {}
+
+\entry
+  {B.A.\ in Arts \& Culture}
+  {2014--2018}
+  {Maastricht University}
+  {}
+
+\entry
+  {B.Sc.\ in International Business}
+  {2013--2017}
+  {Maastricht University}
+  {UM MARBLE Research Program}
+
+%----------------------------------------------------------------------------------------
+%    DISSERTATION
+%----------------------------------------------------------------------------------------
+
+\section{Dissertation}
+
+\textbf{The Climate Governance of Residential Decarbonization}
+
+Examines how housing institutions and market-based decarbonization policies shape political behavior and social solidarity.
+
+%----------------------------------------------------------------------------------------
+%    PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{enumerate}
+  \item \href{https://doi.org/10.1017/S1475676526101352}{\textbf{Mass attitudes towards Russia's aggression against Ukraine: Tentative support for top-down opinion formation}}.
+  {\color{muted}(with Filip Kostelka, Max Bradley, Toine Fiselier, \mbox{Alexandra Jabbour}, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu, and Diana Rafailova).}
+  \emph{European Journal of Political Research}, First View, 2026.
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%    WORKING PAPERS
+%----------------------------------------------------------------------------------------
+
+\section{Working Papers}
+
+\begin{itemize}
+  \item \textbf{The Green Stakeholder}. {\color{muted}\emph{R\&R}.}
+  \item \textbf{The Price of Incompetence: Electoral Punishment and the Heating Transition}.
+  {\color{muted}(with Ludwig Schulze). \emph{Under Review}.}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%    WORK IN PROGRESS
+%----------------------------------------------------------------------------------------
+
+\section{Work in Progress}
+
+\begin{itemize}
+  \item \textbf{The Emergence of Green Consumption Norms}.
+  {\color{muted}(with Vicente Valentim).}
+  \item \textbf{Flood Insurance and Risk Socialization}.
+  {\color{muted}(with Max Bradley, Alexandra Jabbour, and Filip Kostelka).}
+  \item \textbf{The Institutional Configuration of Property Rights during the Energy Transition}.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%    RESEARCH GRANTS
+%----------------------------------------------------------------------------------------
+
+\section{Grants, Fellowships \& Awards}
+
+\simpleitem{\enquote{Salvador de Madariaga} Predoctoral Scholarship, Spanish Ministry of Education and European Commission (€82,600)}{2022--2026}
+\simpleitem{EUI US Exchange Programme (€5,000)}{2025}
+\simpleitem{PECE Young Scholar (€500)}{2024}
+\simpleitem{Dies Natalis Student Prize, Maastricht University (€500)}{2018}
+
+%----------------------------------------------------------------------------------------
+%    TEACHING
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Teaching}
+
+\simpleitem{\textbf{Causal Inference} (graduate), Teaching Assistant, EUI}{2026}
+
+%----------------------------------------------------------------------------------------
+%    INVITED TALKS
+%----------------------------------------------------------------------------------------
+
+\section{Invited Talks}
+
+\simpleitem{European Graduate Network, Universitat Pompeu Fabra}{2025}
+\simpleitem{\href{https://web.sas.upenn.edu/pece2024/}{Political Economy of Climate and the Environment (PECE) APSA Pre-Conference}, University of Pennsylvania}{2024}
+\simpleitem{Public Institutions and Policies as Drivers of Political Attitudes, EUI}{2024}
+
+%----------------------------------------------------------------------------------------
+%    ANNUAL MEETING PRESENTATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Annual Meeting Presentations}
+
+\simpleitem{American Political Science Association (APSA); European Political Science Society (EPSS)}{2026}
+\simpleitem{European Political Science Association (EPSA)}{2025}
+
+%----------------------------------------------------------------------------------------
+%    AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Visiting Positions \& Affiliations}
+
+\simpleitem{Visiting Researcher, University of Oxford (Host: Federica Genovese)}{2026}
+\simpleitem{Visiting Researcher, Humboldt-Universit\"at zu Berlin (Host: Heike Kl\"uver)}{2025}
+\simpleitem{Visiting Ph.D.\ Researcher, Princeton University (Host: Andreas Wiedemann)}{Fall 2024}
+\simpleitem{\href{https://www.eui.eu/research-hub?id=environmental-and-climate-governance}{Environmental Challenges and Climate Change Governance}, EUI}{2023--present}
+\simpleitem{\href{https://www.eui.eu/research-hub?id=environmental-and-climate-politics-working-group}{Environmental and Climate Politics Working Group}, EUI}{2022--present}
+
+%----------------------------------------------------------------------------------------
+%    PROFESSIONAL SERVICES
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+
+\simpleitem{Research Assistant, ERC Grant \enquote{Global Cleavages} (PI: Daniele Caramani)}{2023}
+
+%----------------------------------------------------------------------------------------
+%    METHODS TRAINING
+%----------------------------------------------------------------------------------------
+
+\section{Methods \& Technical Skills}
+
+\simpleitem{\textbf{Methods training:} Causal Inference, Princeton University (Roc\'io Titiunik)}{2024}
+\simpleitem{Field Experiments; Computational Text Analysis, EUI (Natalia Garbiras-D\'iaz; Jessica Di Cocco)}{2023}
+\textbf{Software:} R, Stata, Git, R Markdown, \LaTeX
+
+%----------------------------------------------------------------------------------------
+%    OUTREACH
+%----------------------------------------------------------------------------------------
+
+\section{Public Scholarship}
+
+\simpleitem{\href{https://theconversation.com/what-is-driving-europes-pro-russian-supporters-and-their-stance-on-the-russo-ukrainian-conflict-281598}{What is driving Europe's pro‑Russian supporters and their stance on the Russo‑Ukrainian conflict?}, The Conversation}{2026}
+\simpleitem{\href{https://kleinmanenergy.upenn.edu/commentary/blog/insights-from-the-the-political-economy-of-climate-change-and-the-environment-2024-mini-conference/}{From Ambivalence to Support: How Green Subsidies Can Change Climate Politics}, Kleinman Center for Energy Policy}{2024}
+
+%----------------------------------------------------------------------------------------
+%    LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+Spanish (native); English and German (fluent); Italian (conversational); French (basic)
+
+\end{document}
