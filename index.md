@@ -5,9 +5,7 @@ permalink: /
 ---
 
 <div class="intro" id="about">
-  <p>I am a Ph.D. Candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University. My research lies at the intersection of climate and redistributive politics, focusing on how citizens interpret the impact of the green agenda through housing institutions in Western European countries.</p>
-
-  <p>In my dissertation, I examine the political consequences of the marketisation of the green transition. I argue that this shift in governance reconfigures the relationship between citizens and the state by making both co-responsible for decarbonization goals. This shared responsibility, in turn, shapes downstream preference formation and social solidarity.</p>
+  <p>I am a Ph.D. candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University. My research lies at the intersection of comparative political economy and political behaviour, focusing on how citizens experience major structural transformations through housing institutions. In my dissertation, I examine residential decarbonisation as a setting in which governments pursue collective goals through private homes, making households co-responsible actors in the green transition.</p>
 </div>
 
 <section class="research-section" id="publications">
@@ -74,9 +72,18 @@ permalink: /
     <li class="paper-item">
       <span class="paper-title">Flood Insurance and Risk Socialization</span>
       <span class="paper-authors">(with Max Bradley, Alexandra Jabbour, Filip Kostelka).</span>
+      <details class="abstract">
+        <summary>Abstract</summary>
+        <div class="abstract-body">
+          As climate hazards escalate, what explains public support for socializing the costs of environmental risks? This article draws on findings from the psychology of social solidarity and theorizes two explanations: blame attribution for risk exposure and heuristic judgments of deservingness. We study the case of flood insurance in six European countries, where the financial burden of environmental hazards has been on the rise in recent years. Our analysis combines a survey of over 8,800 voters with vignette and conjoint experiments on homeowner deservingness. Leveraging randomized blame cues, we estimate that attributing risk exposure to individual choice decreases support for risk socialization by 0.87 points. Conjoint analyses reveal that a contributory logic of reciprocity and effort drives these preferences more strongly than material need and shared identity. These findings extend conditional solidarity theories to climate policies, which transform diffuse threats into concrete distributive struggles.
+        </div>
+      </details>
     </li>
     <li class="paper-item">
-      <span class="paper-title">The Institutional Configuration of Property Rights during the Energy Transition</span>.
+      <span class="paper-title">Housing Regimes and Residential Decarbonization</span>.
+    </li>
+    <li class="paper-item">
+      <span class="paper-title">Decarbonization Under Shared Ownership</span>.
     </li>
   </ul>
 </section>
