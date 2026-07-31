@@ -3,4 +3,7 @@
 set -e
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri
+bundle exec htmlproofer ./_site \
+  --check-html \
+  --check-sri \
+  --url-ignore '/^https:\/\/scholar\.google\.com\//'

@@ -1,6 +1,0 @@
----
-url_ignore:
-  - "https://fonts.googleapis.com"
-  - "https://fonts.gstatic.com"
-  # Google Scholar blocks automated CI requests with HTTP 403.
-  - "https://scholar.google.com"
