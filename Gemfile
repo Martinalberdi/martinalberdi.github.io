@@ -6,12 +6,7 @@ source "https://rubygems.org"
 # It bundles Jekyll and all the necessary dependencies.
 gem "github-pages", group: :jekyll_plugins
 
-# If your theme's .gemspec has additional dependencies that are NOT included
-# in the 'github-pages' gem, keep the 'gemspec' line.
-gemspec
-
-# This gem is required for Jekyll 4.x on newer Ruby versions (like on macOS)
-# to serve the site locally. It should ONLY be in the development group.
 group :development do
+  gem "html-proofer", "~> 3.19"
   gem "webrick", "~> 1.7"
 end

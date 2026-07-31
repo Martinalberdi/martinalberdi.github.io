@@ -4,12 +4,22 @@ _site
 
 # Jekyll-related temporary files/caches
 .sass-cache
-Gemfile.lock
 *.gem
+
+# Local Ruby/Bundler files
+.bundle/
+vendor/
 
 # macOS system files
 .DS_Store
 
-# RStudio project files
+# R/LaTeX local and generated files
+.Rhistory
 .Rproj.user/
 *.Rproj
+*.aux
+*.log
+*.out
+
+# Temporary working files
+tmp/
