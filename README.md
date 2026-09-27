@@ -1,6 +1,6 @@
-# Martín Alberdi — Academic Website
+# Martín Alberdi 
 
-Source for [martinalberdi.github.io](https://martinalberdi.github.io), the academic website of Martín Alberdi, Ph.D. candidate in Political Science at the European University Institute.
+Source for [martinalberdi.github.io](https://martinalberdi.github.io), my academic webiste.
 
 ## Local development
 
