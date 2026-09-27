@@ -1,12 +1,13 @@
 :root {
-  --bg: #fff;
-  --accent-bg: #fff6f6;
-  --text: #202124;
-  --muted: #5f6368;
-  --link: #007a33;
-  --link-hover: #005f28;
-  --rule: #d8dadd;
-  --focus: #0b57d0;
+  --bg: #faf9f6;
+  --accent-bg: #f0f1eb;
+  --text: #252824;
+  --muted: #62665f;
+  --link: #28523e;
+  --link-hover: #193c2b;
+  --rule: #dddfd6;
+  --focus: #28523e;
+  --serif: Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -22,9 +23,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,24 +81,26 @@ p {
 
 .site-shell {
   display: grid;
-  grid-template-columns: 240px minmax(0, 640px);
+  grid-template-columns: 220px minmax(0, 600px);
   gap: 64px;
   align-items: start;
-  width: min(calc(100% - 64px), 944px);
+  width: min(calc(100% - 64px), 884px);
   margin: 0 auto;
   padding: 64px 0 80px;
 }
 
 .profile-card {
-  position: sticky;
+  position: static;
   top: 48px;
   min-width: 0;
 }
 
 .site-title {
-  margin: 0 0 1rem;
-  font-size: 1.75rem;
-  font-weight: 600;
+  margin: 0 0 1.5rem;
+  font-family: var(--serif);
+  font-size: 2.125rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
   line-height: 1.15;
 }
 
@@ -112,21 +115,21 @@ p {
   width: 200px;
   max-width: 100%;
   height: 200px;
-  margin: 0 0 0.9rem;
+  margin: 0 0 1.35rem;
 }
 
 .profile-image {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 2px;
   object-fit: cover;
   object-position: center;
 }
 
 .profile-details {
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .profile-details p {
@@ -134,7 +137,7 @@ p {
 }
 
 .profile-email {
-  margin-top: 0.15rem !important;
+  margin-top: 0.65rem !important;
   overflow-wrap: anywhere;
 }
 
@@ -175,6 +178,37 @@ p {
   height: 1.25rem;
 }
 
+.section-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.875rem;
+}
+
+.section-nav a {
+  color: var(--muted);
+  padding: 0.15rem 0;
+}
+
+.section-nav a:hover {
+  color: var(--link);
+}
+
+#about {
+  scroll-margin-top: 2rem;
+}
+
+/* The full profile and navigation must fit before becoming sticky. */
+@media (min-width: 801px) and (min-height: 740px) {
+  .profile-card {
+    position: sticky;
+  }
+}
+
 main {
   min-width: 0;
 }
@@ -190,7 +224,7 @@ main h3 {
 }
 
 .intro {
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.25rem;
 }
 
 .intro p:last-child {
@@ -198,56 +232,30 @@ main h3 {
 }
 
 .research-section {
-  margin: 0 0 2.6rem;
+  margin: 0 0 3.25rem;
   scroll-margin-top: 2rem;
 }
 
 .section-title {
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.45rem;
-  border-bottom: 2px solid var(--rule);
+  margin: 0 0 1.6rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--rule);
   color: var(--text);
-  font-size: 1.18rem;
-  font-weight: 600;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
 }
 
 .paper-list {
   margin-bottom: 0;
-}
-
-.publication-list {
-  padding-left: 1.65rem;
-}
-
-.publication-list > li {
-  padding-left: 0.2rem;
-}
-
-.publication-list > li::marker {
-  color: var(--muted);
-  font-weight: 600;
-}
-
-.working-list {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.working-list > li {
-  position: relative;
-  padding-left: 1.4rem;
-}
-
-.working-list > li::before {
-  position: absolute;
-  left: 0.15rem;
-  color: var(--muted);
-  content: "\2013";
-}
-
 .paper-item {
-  margin-bottom: 1.05rem;
+  margin-bottom: 1.8rem;
 }
 
 .paper-item:last-child {
@@ -259,13 +267,17 @@ main h3 {
 }
 
 .paper-title {
+  display: block;
+  margin-bottom: 0.35rem;
   font-weight: 600;
+  line-height: 1.45;
 }
 
 .paper-status {
-  margin-left: 0.3rem;
-  color: var(--muted);
-  font-size: 0.78rem;
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--link);
+  font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -275,35 +287,39 @@ a.paper-title {
 }
 
 .paper-authors {
+  display: block;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
 .paper-venue {
+  display: block;
+  margin-top: 0.3rem;
   font-size: 0.94rem;
 }
 
 details.abstract {
-  display: inline;
-  margin-left: 0.25rem;
+  display: block;
+  margin-top: 0.55rem;
 }
 
 details.abstract > summary {
-  display: inline;
+  display: inline-block;
   color: var(--muted);
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   list-style: none;
   white-space: nowrap;
 }
 
-details.abstract > summary::before {
-  content: "[";
+details.abstract > summary::after {
+  content: " +";
+  color: var(--link);
 }
 
-details.abstract > summary::after {
-  content: "]";
+details.abstract[open] > summary::after {
+  content: " \2212";
 }
 
 details.abstract > summary::-webkit-details-marker {
@@ -319,15 +335,14 @@ details.abstract[open] > summary {
   display: block;
   margin-top: 0.75rem;
   padding: 0.9rem 1rem;
-  border-left: 3px solid var(--link);
-  border-radius: 0 4px 4px 0;
+  border-left: 2px solid var(--link);
   background: var(--accent-bg);
   color: var(--text);
   font-size: 0.925rem;
   line-height: 1.6;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 800px) {
   .site-shell {
     grid-template-columns: minmax(0, 1fr);
     gap: 2.25rem;
@@ -344,6 +359,13 @@ details.abstract[open] > summary {
   .intro {
     margin-bottom: 2.5rem;
   }
+
+  .section-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.45rem 1.25rem;
+    margin-top: 1.4rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -353,7 +375,7 @@ details.abstract[open] > summary {
   }
 
   .site-title {
-    font-size: 1.65rem;
+    font-size: 2rem;
   }
 
   .profile-picture {
@@ -362,11 +384,7 @@ details.abstract[open] > summary {
   }
 
   .section-title {
-    font-size: 1.12rem;
-  }
-
-  .publication-list {
-    padding-left: 1.4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -407,6 +425,7 @@ details.abstract[open] > summary {
   }
 
   .profile-actions,
+  .section-nav,
   .skip-link {
     display: none;
   }

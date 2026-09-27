@@ -5,13 +5,14 @@ permalink: /
 ---
 
 <div class="intro" id="about">
-  <p>I am a Ph.D. candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University. My research lies at the intersection of comparative political economy and political behaviour, focusing on how citizens experience major structural transformations through housing institutions. In my dissertation, I examine residential decarbonisation as a setting in which governments pursue collective goals through private homes, making households co-responsible actors in the green transition.</p>
+  <p>I am a Ph.D. candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University.</p>
+  <p>My research lies at the intersection of comparative political economy and political behaviour, focusing on how citizens experience major structural transformations through housing institutions. In my dissertation, I examine residential decarbonisation as a setting in which governments pursue collective goals through private homes, making households co-responsible actors in the green transition.</p>
 </div>
 
 <section class="research-section" id="publications">
   <h2 class="section-title">Publications</h2>
 
-  <ol class="paper-list publication-list" reversed>
+  <ol class="paper-list publication-list" role="list" reversed>
     <li class="paper-item">
       <div class="paper-citation">
         <a class="paper-title" href="https://doi.org/10.1017/S1475676526101352">Mass attitudes towards Russia’s aggression against Ukraine: Tentative support for top-down opinion formation</a>
@@ -31,11 +32,11 @@ permalink: /
 <section class="research-section" id="working-papers">
   <h2 class="section-title">Working Papers</h2>
 
-  <ul class="paper-list working-list">
+  <ul class="paper-list working-list" role="list">
     <li class="paper-item">
       <div class="paper-citation">
         <span class="paper-title">The Green Stakeholder</span>
-        <span class="paper-status">R&amp;R</span>.
+        <span class="paper-status">R&amp;R.</span>
         <details class="abstract">
           <summary>Abstract</summary>
           <div class="abstract-body">
@@ -48,8 +49,8 @@ permalink: /
     <li class="paper-item">
       <div class="paper-citation">
         <span class="paper-title">The Price of Incompetence: Electoral Punishment and the Heating Transition</span>
-        <span class="paper-status">Under Review</span>
         <span class="paper-authors">(with Ludwig Schulze).</span>
+        <span class="paper-status">Under Review</span>
         <details class="abstract">
           <summary>Abstract</summary>
           <div class="abstract-body">
@@ -64,7 +65,7 @@ permalink: /
 <section class="research-section" id="work-in-progress">
   <h2 class="section-title">Work in Progress</h2>
 
-  <ul class="paper-list working-list">
+  <ul class="paper-list working-list" role="list">
     <li class="paper-item">
       <span class="paper-title">The Emergence of Green Consumption Norms</span>
       <span class="paper-authors">(with Vicente Valentim).</span>
@@ -80,10 +81,10 @@ permalink: /
       </details>
     </li>
     <li class="paper-item">
-      <span class="paper-title">Housing Regimes and Residential Decarbonization</span>.
+      <span class="paper-title">Housing Regimes and Residential Decarbonization.</span>
     </li>
     <li class="paper-item">
-      <span class="paper-title">Decarbonization Under Shared Ownership</span>.
+      <span class="paper-title">Decarbonization Under Shared Ownership.</span>
     </li>
   </ul>
 </section>
