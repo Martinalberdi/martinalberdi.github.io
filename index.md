@@ -35,8 +35,8 @@ permalink: /
   <ul class="paper-list working-list" role="list">
     <li class="paper-item">
       <div class="paper-citation">
-        <span class="paper-title">The Green Stakeholder</span>
-        <span class="paper-status">R&amp;R.</span>
+        <span class="paper-title">The Green Stakeholder</span>.
+        <span class="paper-status">R&amp;R, <em>American Political Science Review</em>.</span>
         <details class="abstract">
           <summary>Abstract</summary>
           <div class="abstract-body">
