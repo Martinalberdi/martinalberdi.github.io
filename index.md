@@ -24,6 +24,13 @@ permalink: /
             This paper studies variation in mass attitudes towards the Russo-Ukrainian War. Although most Europeans express dismay at Russia’s aggression against Ukraine, more ambivalent or even pro-Kremlin positions are not rare. Drawing on the literature on foreign policy and war, we hypothesise that support for the aggressor may stem from a quartet of factors: economic interests, ideological preferences, partisan alignment, and disinformation. We examine the role of these factors using two types of survey data. The first is an original survey conducted in five countries (Czechia, France, Poland, Romania, and Slovakia) and spanning over 12,000 respondents. The second is the Solidarity in Europe survey, with more than 24,000 respondents from seventeen countries. The results of three types of analyses reveal that neutral and pro-Kremlin attitudes, held by sizeable segments of European society, are most strongly linked to the positions of respondents’ preferred political parties, followed by disinformation and ideology. Overall, top-down models of public opinion seem to better explain within-country variations in attitudes towards the conflict than bottom-up models. These findings, which should be interpreted with caution, carry important implications for containing Russia’s influence on European public opinion and contribute to the literature on public preference formation in the field of foreign policy.
           </div>
         </details>
+        <a class="media-link" href="https://www.lexpress.fr/monde/europe/comment-partis-et-medias-forment-lopinion-pro-poutine-en-europe-OWOGN3Z2LJHV3LS7WFCRK5ZPTI/" title="Comment partis et médias forment l’opinion pro-Poutine en Europe" lang="fr">
+          <svg class="media-icon" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 2.5h10v10a1 1 0 0 1-1 1h-10a1 1 0 0 1-1-1v-6h2v6"/>
+            <path d="M6 5.5h5M6 8h2M10 8h1M6 10.5h2M10 10.5h1"/>
+          </svg>
+          <span>L'Express</span>
+        </a>
       </div>
     </li>
   </ol>

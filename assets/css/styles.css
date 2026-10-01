@@ -327,6 +327,24 @@ details.abstract[open] > summary {
   color: var(--link);
 }
 
+.media-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  vertical-align: baseline;
+  margin-left: 0.6rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.media-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
 .abstract-body {
   display: block;
   margin-top: 0.75rem;
