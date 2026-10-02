@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="intro" id="about">
-  <p>I am a Ph.D. candidate in Political Science at the European University Institute. In Fall 2024, I was a visiting researcher at Princeton University.</p>
+  <p>I am a Ph.D. candidate in Political Science at the European University Institute. I have been a visiting researcher at the University of Oxford (2026), Humboldt University of Berlin (2025), and Princeton University (Fall 2024).</p>
   <p>My research lies at the intersection of comparative political economy and political behaviour, focusing on how citizens experience major structural transformations through housing institutions. In my dissertation, I examine residential decarbonisation as a setting in which governments pursue collective goals through private homes, making households co-responsible actors in the green transition.</p>
 </div>
 
@@ -17,7 +17,7 @@ permalink: /
       <div class="paper-citation">
         <a class="paper-title" href="https://doi.org/10.1017/S1475676526101352">Mass attitudes towards Russia’s aggression against Ukraine: Tentative support for top-down opinion formation</a>
         <span class="paper-authors">(with Filip Kostelka, Max Bradley, Toine Fiselier, Alexandra Jabbour, Nahla Mansour, Eleonora Minaeva, Silvia Porciuleanu and Diana Rafailova).</span>
-        <span class="paper-venue"><em>European Journal of Political Research</em>.</span>
+        <span class="paper-venue"><em>European Journal of Political Research</em>, First View, 2026.</span>
         <details class="abstract">
           <summary>Abstract</summary>
           <div class="abstract-body">
@@ -57,7 +57,7 @@ permalink: /
       <div class="paper-citation">
         <span class="paper-title">The Price of Incompetence: Electoral Punishment and the Heating Transition</span>
         <span class="paper-authors">(with Ludwig Schulze).</span>
-        <span class="paper-status">Under Review</span>
+        <span class="paper-status">Under review, <em>British Journal of Political Science</em>.</span>
         <details class="abstract">
           <summary>Abstract</summary>
           <div class="abstract-body">
