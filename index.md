@@ -55,7 +55,7 @@ permalink: /
 
     <li class="paper-item">
       <div class="paper-citation">
-        <span class="paper-title">The Price of Incompetence: Electoral Punishment and the Heating Transition</span>
+        <a class="paper-title" href="https://osf.io/preprints/socarxiv/28kfy_v1">The Price of Incompetence: Electoral Punishment and the Heating Transition</a>
         <span class="paper-authors">(with Ludwig Schulze).</span>
         <span class="paper-status">R&amp;R, <em>British Journal of Political Science</em>.</span>
         <details class="abstract">

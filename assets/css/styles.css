@@ -280,7 +280,11 @@ main h3 {
 }
 
 a.paper-title {
-  color: var(--link);
+  color: #007a33;
+}
+
+a.paper-title:hover {
+  color: var(--link-hover);
 }
 
 .paper-authors {
